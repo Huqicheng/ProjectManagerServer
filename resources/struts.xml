@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+
+    <!-- Some or all of these can be flipped to true for debugging -->
+    <constant name="struts.action.extension" value="do" />
+   
+    <package name="package" extends="struts-default">
+       
+       <!-- product relative  begin -->
+       
+       <action name="write" class="action.JsonAction"  method="write"/>  
+       
+    </package>
+    
+    
+    
+
+</struts>
+
+<!-- END SNIPPET: xworkSample -->
+
