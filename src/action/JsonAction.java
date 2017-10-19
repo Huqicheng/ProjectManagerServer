@@ -8,7 +8,7 @@ import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import utils.IPUtils;
+
 import utils.StrutsUtil;
 
 public class JsonAction extends ActionSupport{
@@ -16,7 +16,7 @@ public class JsonAction extends ActionSupport{
 
 	public void write() throws IOException {  
 		HttpServletResponse response = ServletActionContext.getResponse();   
-		System.out.println(IPUtils.getIP(ServletActionContext.getRequest()));
+		
 		StrutsUtil.write(response,"12434343434343433");
 	} 
 	
